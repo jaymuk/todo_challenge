@@ -1,1 +1,30 @@
-index.html
+<!doctype html>
+<html lang="en" ng-app="todoApp">
+    <head>
+        <title>To Do Application</title>
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/angular/angular.js"></script>
+        <!-- ngResource provides interaction support with RESTful services via $resource -->
+        <script src="bower_components/angular-resource/angular-resource.js"></script>
+    </head>
+
+<body>
+    <div ng-controller="todoAppController as appCtrl">
+        <form>
+            <input type="text" placeholder="Add a task.." ng-model="appCtrl.taskToAdd">
+            <button ng-click="appCtrl.addTask()">Add</button>
+        </form>
+        
+        <div class="task-container">
+            <ul class="task-list" ng-repeat="task in appCtrl.tasks">
+                <li>{{ task.title }}</li>
+            </ul>  
+        </div>
+    </div>
+
+<script src="js/app.js"></script>
+<script src="js/controllers/todoAppController.js"></script>
+</body>
+
+</html>

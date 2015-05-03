@@ -18,5 +18,12 @@
   "bugs": {
     "url": "https://github.com/makersacademy/todo_challenge/issues"
   },
-  "homepage": "https://github.com/makersacademy/todo_challenge#readme"
+  "homepage": "https://github.com/makersacademy/todo_challenge#readme",
+  "devDependencies": {
+    "jasmine-core": "^2.3.0",
+    "karma": "^0.12.31",
+    "karma-chrome-launcher": "^0.1.8",
+    "karma-jasmine": "^0.3.5",
+    "karma-phantomjs-launcher": "^0.1.4"
+  }
 }
